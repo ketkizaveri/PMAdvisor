@@ -28,7 +28,7 @@ export default function SearchBox({
 
   return (
     <form
-      className="rounded-lg border border-line bg-white p-3 shadow-soft"
+      className="rounded-lg border border-line bg-white/95 p-2 shadow-panel backdrop-blur"
       onSubmit={handleSubmit}
     >
       <div
@@ -43,13 +43,13 @@ export default function SearchBox({
         </label>
         <input
           id="pmadvisor-question"
-          className="min-h-14 flex-1 rounded-md border border-transparent bg-cloud px-4 text-base text-ink outline-none transition focus:border-brand focus:bg-white focus:ring-4 focus:ring-brand/10 sm:text-lg"
+          className="min-h-14 flex-1 rounded-md border border-transparent bg-cloud px-4 text-base text-ink outline-none transition placeholder:text-slate-400 focus:border-brand focus:bg-white focus:ring-4 focus:ring-brand/10 sm:text-lg"
           placeholder="Ask about roadmap, discovery, metrics, stakeholder alignment..."
           value={question}
           onChange={(event) => setQuestion(event.target.value)}
         />
         <button
-          className="min-h-14 rounded-md bg-ink px-6 text-base font-semibold text-white transition hover:bg-slate-700 focus:outline-none focus:ring-4 focus:ring-ink/20"
+          className="min-h-14 rounded-md bg-brand px-6 text-base font-semibold text-white shadow-sm transition hover:bg-blue-700 focus:outline-none focus:ring-4 focus:ring-brand/20"
           type="submit"
         >
           Ask PMAdvisor
