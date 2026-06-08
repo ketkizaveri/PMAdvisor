@@ -1,3 +1,4 @@
+import Link from "next/link";
 import SearchBox from "@/components/SearchBox";
 import QuestionExamples from "@/components/QuestionExamples";
 
@@ -19,19 +20,19 @@ export default function Home() {
     <main className="min-h-screen px-5 py-6 text-ink sm:px-8">
       <div className="mx-auto flex min-h-[calc(100vh-4rem)] w-full max-w-6xl flex-col">
         <header className="flex items-center justify-between rounded-lg border border-line/80 bg-white/85 px-4 py-3 shadow-sm backdrop-blur">
-          <a className="flex items-center gap-3 text-base font-semibold" href="/">
+          <Link className="flex items-center gap-3 text-base font-semibold" href="/">
             <span className="flex size-9 items-center justify-center rounded-md bg-navy text-sm font-bold text-white">
               PM
             </span>
             <span>PMAdvisor</span>
-          </a>
+          </Link>
           <nav className="flex items-center gap-2 text-sm font-medium text-steel">
-            <a className="rounded-md px-3 py-2 transition hover:bg-cloud hover:text-ink" href="/">
+            <Link className="rounded-md px-3 py-2 transition hover:bg-cloud hover:text-ink" href="/">
               Home
-            </a>
-            <a className="rounded-md px-3 py-2 transition hover:bg-cloud hover:text-ink" href="/ask">
+            </Link>
+            <Link className="rounded-md px-3 py-2 transition hover:bg-cloud hover:text-ink" href="/ask">
               Ask
-            </a>
+            </Link>
           </nav>
         </header>
 
