@@ -68,6 +68,12 @@ export default async function AskPage({ searchParams }: AskPageProps) {
             >
               Sources
             </Link>
+            <Link
+              className="rounded-md px-3 py-2 transition hover:bg-cloud hover:text-ink"
+              href="/eval"
+            >
+              Eval
+            </Link>
           </nav>
         </header>
 

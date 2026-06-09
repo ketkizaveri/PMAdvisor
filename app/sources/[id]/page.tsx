@@ -59,6 +59,7 @@ export default async function DocDetailPage({
             <Link className="rounded-md px-3 py-2 transition hover:bg-cloud hover:text-ink" href="/">Home</Link>
             <Link className="rounded-md px-3 py-2 transition hover:bg-cloud hover:text-ink" href="/ask">Ask</Link>
             <Link className="rounded-md bg-cloud px-3 py-2 font-semibold text-ink" href="/sources">Sources</Link>
+            <Link className="rounded-md px-3 py-2 transition hover:bg-cloud hover:text-ink" href="/eval">Eval</Link>
           </nav>
         </header>
 
