@@ -1,7 +1,7 @@
 ---
 author: Lenny Rachitsky
 title: Prioritization Frameworks Every PM Should Know
-url: https://www.lennysnewsletter.com/p/how-to-prioritize
+url:
 topic: roadmapping
 published:
 ---

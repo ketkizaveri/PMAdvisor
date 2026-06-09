@@ -1,7 +1,7 @@
 ---
 author: Shreya Nair
 title: Translating Product Vision into Executable Strategy
-url: https://www.svpg.com/product-vision-vs-strategy/
+url:
 topic: product strategy
 published:
 ---

@@ -200,10 +200,10 @@ export default async function AskPage({ searchParams }: AskPageProps) {
                 results.map(({ doc, score }) => (
                   <CitationCard
                     key={doc.id}
+                    docId={doc.id}
                     title={doc.title}
                     source={doc.author || doc.topic}
                     excerpt={getExcerpt(doc.body)}
-                    url={doc.url || undefined}
                     score={score}
                   />
                 ))

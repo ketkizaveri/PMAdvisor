@@ -1,7 +1,7 @@
 ---
 author: Jackie Bavaro
 title: "Stakeholder Alignment: How PMs Build and Maintain It"
-url: https://jackiebo.medium.com/stakeholder-management-for-product-managers
+url:
 topic: stakeholder management
 published:
 ---

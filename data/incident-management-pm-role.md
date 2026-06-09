@@ -1,7 +1,7 @@
 ---
 author: Lara Hogan
 title: The PM's Role in Incident Management
-url: https://increment.com/on-call/on-call-for-product-managers/
+url:
 topic: incident management
 published:
 ---

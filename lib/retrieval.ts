@@ -63,6 +63,14 @@ function parseDocument(filename: string, content: string): Document {
   return { id, title, author, url, topic, published, body };
 }
 
+// TODO: Source URLs in data/*.md frontmatter need manual curation.
+// Several URLs are stale (404/dead). Each doc's `url` field should be
+// verified and updated with the correct canonical link before launch.
+// Docs with no valid URL will show a "Local copy only" badge on their detail page.
+export function getDocument(id: string): Document | undefined {
+  return loadDocuments().find((d) => d.id === id);
+}
+
 // Module-level cache — populated once per server process
 let cachedDocuments: Document[] | null = null;
 

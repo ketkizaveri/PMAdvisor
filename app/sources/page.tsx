@@ -114,27 +114,21 @@ export default function SourcesPage() {
                     <li key={doc.id} className="px-6 py-4">
                       <div className="flex flex-col gap-1 sm:flex-row sm:items-start sm:justify-between sm:gap-4">
                         <div className="min-w-0 flex-1">
-                          {doc.url ? (
-                            <a
-                              href={doc.url}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              className="font-semibold text-ink hover:text-brand hover:underline"
-                            >
-                              {doc.title}
-                            </a>
-                          ) : (
-                            <p className="font-semibold text-ink">{doc.title}</p>
-                          )}
+                          <Link
+                            href={`/sources/${doc.id}`}
+                            className="font-semibold text-ink hover:text-brand hover:underline"
+                          >
+                            {doc.title}
+                          </Link>
                           <div className="mt-1.5 flex flex-wrap items-center gap-2">
                             <span className="rounded-full bg-mint/10 px-2.5 py-0.5 text-xs font-semibold text-mint">
                               {capitalize(doc.topic)}
                             </span>
                             {doc.url && (
-                              <span className="truncate text-xs text-steel">
-                                {new URL(doc.url).hostname}
-                              </span>
-                            )}
+                                <span className="text-xs text-steel">
+                                  {new URL(doc.url).hostname}
+                                </span>
+                              )}
                           </div>
                         </div>
                         <div className="shrink-0 text-xs text-steel">
