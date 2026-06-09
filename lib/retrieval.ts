@@ -7,6 +7,7 @@ export type Document = {
   author: string;
   url: string;
   topic: string;
+  published: string;
   body: string;
 };
 
@@ -31,23 +32,35 @@ const STOP_WORDS = new Set([
   "which", "who", "will", "with", "would", "you", "your",
 ]);
 
+function parseFrontmatter(content: string): { meta: Record<string, string>; body: string } {
+  if (!content.startsWith("---")) return { meta: {}, body: content };
+  const end = content.indexOf("\n---", 3);
+  if (end === -1) return { meta: {}, body: content };
+  const yaml = content.slice(4, end);
+  const rest = content.slice(end + 4).trimStart();
+  const meta: Record<string, string> = {};
+  for (const line of yaml.split("\n")) {
+    const colon = line.indexOf(":");
+    if (colon === -1) continue;
+    const key = line.slice(0, colon).trim();
+    const value = line.slice(colon + 1).trim().replace(/^["']|["']$/g, "");
+    if (key) meta[key] = value;
+  }
+  return { meta, body: rest };
+}
+
 function parseDocument(filename: string, content: string): Document {
   const id = filename.replace(/\.md$/, "");
+  const { meta, body } = parseFrontmatter(content);
 
-  const titleMatch = content.match(/^#\s+(.+)$/m);
-  const title = titleMatch ? titleMatch[1].trim() : id;
+  const titleMatch = body.match(/^#\s+(.+)$/m);
+  const title = meta.title || (titleMatch ? titleMatch[1].trim() : id);
+  const author = meta.author || "";
+  const url = meta.url || "";
+  const topic = meta.topic || id.split("-").slice(0, 2).join(" ");
+  const published = meta.published || "";
 
-  const authorMatch = content.match(/\*\*Author:\*\*\s*(.+)/);
-  const author = authorMatch ? authorMatch[1].trim() : "";
-
-  const urlMatch = content.match(/\*\*Source:\*\*\s*(.+)/);
-  const url = urlMatch ? urlMatch[1].trim() : "";
-
-  // Derive a readable topic from the filename prefix (e.g. "product-discovery")
-  const parts = id.split("-");
-  const topic = parts.slice(0, 2).join(" ");
-
-  return { id, title, author, url, topic, body: content };
+  return { id, title, author, url, topic, published, body };
 }
 
 // Module-level cache — populated once per server process

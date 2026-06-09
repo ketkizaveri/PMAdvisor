@@ -1,7 +1,12 @@
-# Jobs to Be Done: A PM's Framework for Understanding Customer Needs
+---
+author: Alan Klement
+title: "Jobs to Be Done: A PM's Framework for Understanding Customer Needs"
+url: https://www.intercom.com/books/jobs-to-be-done
+topic: product discovery
+published:
+---
 
-**Author:** Alan Klement  
-**Source:** https://www.intercom.com/books/jobs-to-be-done
+# Jobs to Be Done: A PM's Framework for Understanding Customer Needs
 
 ---
 

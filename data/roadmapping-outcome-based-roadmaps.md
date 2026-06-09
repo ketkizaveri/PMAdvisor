@@ -1,7 +1,12 @@
-# Outcome-Based Roadmaps: Moving Beyond Feature Lists
+---
+author: Teresa Torres
+title: "Outcome-Based Roadmaps: Moving Beyond Feature Lists"
+url: https://www.producttalk.org/2021/08/outcome-based-roadmaps/
+topic: roadmapping
+published:
+---
 
-**Author:** Teresa Torres  
-**Source:** https://www.producttalk.org/2021/08/outcome-based-roadmaps/
+# Outcome-Based Roadmaps: Moving Beyond Feature Lists
 
 ---
 
