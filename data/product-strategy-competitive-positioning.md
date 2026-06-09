@@ -1,7 +1,12 @@
-# Competitive Positioning for Product Managers
+---
+author: Marcus Webb
+title: Competitive Positioning for Product Managers
+url: https://www.reforge.com/blog/competitive-positioning
+topic: product strategy
+published:
+---
 
-**Author:** Marcus Webb  
-**Source:** https://www.reforge.com/blog/competitive-positioning
+# Competitive Positioning for Product Managers
 
 ---
 

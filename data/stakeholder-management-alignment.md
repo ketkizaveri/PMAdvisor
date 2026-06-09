@@ -1,7 +1,12 @@
-# Stakeholder Alignment: How PMs Build and Maintain It
+---
+author: Jackie Bavaro
+title: "Stakeholder Alignment: How PMs Build and Maintain It"
+url:
+topic: stakeholder management
+published:
+---
 
-**Author:** Jackie Bavaro  
-**Source:** https://jackiebo.medium.com/stakeholder-management-for-product-managers
+# Stakeholder Alignment: How PMs Build and Maintain It
 
 ---
 

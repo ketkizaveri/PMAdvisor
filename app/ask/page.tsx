@@ -49,12 +49,26 @@ export default async function AskPage({ searchParams }: AskPageProps) {
             </span>
             <span>PMAdvisor</span>
           </Link>
-          <Link
-            className="rounded-md px-3 py-2 text-sm font-medium text-steel transition hover:bg-cloud hover:text-ink"
-            href="/"
-          >
-            New question
-          </Link>
+          <nav className="flex items-center gap-2 text-sm font-medium text-steel">
+            <Link
+              className="rounded-md px-3 py-2 transition hover:bg-cloud hover:text-ink"
+              href="/"
+            >
+              Home
+            </Link>
+            <Link
+              className="rounded-md px-3 py-2 transition hover:bg-cloud hover:text-ink"
+              href="/ask"
+            >
+              Ask
+            </Link>
+            <Link
+              className="rounded-md px-3 py-2 transition hover:bg-cloud hover:text-ink"
+              href="/sources"
+            >
+              Sources
+            </Link>
+          </nav>
         </header>
 
         <section className="grid gap-8 py-10 lg:grid-cols-[minmax(0,1fr)_22rem]">
@@ -186,10 +200,10 @@ export default async function AskPage({ searchParams }: AskPageProps) {
                 results.map(({ doc, score }) => (
                   <CitationCard
                     key={doc.id}
+                    docId={doc.id}
                     title={doc.title}
                     source={doc.author || doc.topic}
                     excerpt={getExcerpt(doc.body)}
-                    url={doc.url || undefined}
                     score={score}
                   />
                 ))

@@ -1,7 +1,12 @@
-# Translating Product Vision into Executable Strategy
+---
+author: Shreya Nair
+title: Translating Product Vision into Executable Strategy
+url:
+topic: product strategy
+published:
+---
 
-**Author:** Shreya Nair  
-**Source:** https://www.svpg.com/product-vision-vs-strategy/
+# Translating Product Vision into Executable Strategy
 
 ---
 

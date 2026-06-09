@@ -1,7 +1,12 @@
-# The PM's Role in Incident Management
+---
+author: Lara Hogan
+title: The PM's Role in Incident Management
+url:
+topic: incident management
+published:
+---
 
-**Author:** Lara Hogan  
-**Source:** https://increment.com/on-call/on-call-for-product-managers/
+# The PM's Role in Incident Management
 
 ---
 

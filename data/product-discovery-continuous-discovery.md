@@ -1,7 +1,12 @@
-# Continuous Product Discovery: A Practical Guide
+---
+author: Teresa Torres
+title: "Continuous Product Discovery: A Practical Guide"
+url: https://www.producttalk.org/2021/05/continuous-discovery-habits/
+topic: product discovery
+published:
+---
 
-**Author:** Teresa Torres  
-**Source:** https://www.producttalk.org/2021/05/continuous-discovery-habits/
+# Continuous Product Discovery: A Practical Guide
 
 ---
 

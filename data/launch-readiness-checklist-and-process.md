@@ -1,7 +1,12 @@
-# Launch Readiness: How to Ship with Confidence
+---
+author: Shreya Nair
+title: "Launch Readiness: How to Ship with Confidence"
+url: https://www.productplan.com/learn/product-launch-checklist/
+topic: launch readiness
+published:
+---
 
-**Author:** Shreya Nair  
-**Source:** https://www.productplan.com/learn/product-launch-checklist/
+# Launch Readiness: How to Ship with Confidence
 
 ---
 

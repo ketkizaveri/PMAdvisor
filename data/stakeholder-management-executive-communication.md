@@ -1,7 +1,12 @@
-# Communicating with Executives: A PM's Playbook
+---
+author: Ravi Mehta
+title: "Communicating with Executives: A PM's Playbook"
+url: https://www.ravi-mehta.com/product-manager-roles/
+topic: stakeholder management
+published:
+---
 
-**Author:** Ravi Mehta  
-**Source:** https://www.ravi-mehta.com/product-manager-roles/
+# Communicating with Executives: A PM's Playbook
 
 ---
 
